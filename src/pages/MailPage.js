@@ -1,5 +1,6 @@
 import React ,{Component} from 'react'
 import { ComposeMail } from '../components/ComposeMail'
+import { MailList } from '../components/MailList'
 
 export class MailPage extends Component {
     render() {
@@ -7,7 +8,7 @@ export class MailPage extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                    I'm not here
+                        <MailList seed={this.props.seed} />
                     </div>
                     <div className="col">
                         <ComposeMail seed={this.props.seed} />

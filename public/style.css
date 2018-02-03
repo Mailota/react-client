@@ -19,3 +19,13 @@ body {
 .compose-box {
     margin-top: 10em;
 }
+
+.mail-list {
+    margin-top: 5em;
+    color: black;
+}
+
+.mails {
+    margin: 1em;
+    color: black
+}

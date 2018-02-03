@@ -43,7 +43,6 @@ export class ComposeMail extends Component {
         })
         axios.post('http://localhost:8000/mail', postBody)
             .then((response) => {
-                console.log(response)
                 this.setState({
                     loading: false,
                     sendResult: 'Mail Successfully Sent',
@@ -52,7 +51,6 @@ export class ComposeMail extends Component {
                     message: ''
                 })
             }).catch((err) => {
-                console.log(err)
                 this.setState({
                     loading: false,
                     sendResult: 'Sorry! Some problem with sending!'
