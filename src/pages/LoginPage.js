@@ -7,7 +7,7 @@ export class LoginPage extends Component {
     }
 
     login() {
-        
+        this.props.login(this.state.seed)
     }
 
     seedChanged(event) {
