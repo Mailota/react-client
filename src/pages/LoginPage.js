@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SeedGenerator from 'iota-generate-seed'
+import Particles from 'react-particles-js';
 
 export class LoginPage extends Component {
     state = {

@@ -8,7 +8,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    if(localStorage.getItem('mailSeed')) {
+    if (localStorage.getItem('mailSeed')) {
       this.setState({
         mailSeed: localStorage.getItem('mailSeed')
       })
@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   renderAppropriatePage() {
-    if(this.state.mailSeed) {
+    if (this.state.mailSeed) {
       return (
         <MailPage seed={this.state.mailSeed} />
       )
@@ -34,9 +34,37 @@ class App extends Component {
     }
   }
 
+  renderLogout() {
+    if(this.state.mailSeed) {
+      return (
+        <ul className="navbar-nav">
+          <li className="nav-item active">
+            <a className="nav-link" href="#" onClick={(e) => {
+              e.preventDefault()
+              this.setState({
+                mailSeed: ''
+              })
+              localStorage.setItem('mailSeed', '')
+            }}>Logout</a>
+          </li>
+        </ul>
+      )
+    }
+  }
+
+  renderNav() {
+    return (
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <a className="navbar-brand" style={{color: 'black'}} >Mailota-α</a>
+        {this.renderLogout()}
+      </nav>
+    )
+  }
+
   render() {
     return (
       <div>
+        {this.renderNav()}
         {this.renderAppropriatePage()}
       </div>
     );

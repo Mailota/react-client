@@ -11,6 +11,10 @@ body {
     word-break: break-all;
 }
 
+.word-break {
+    word-break: break-all
+}
+
 .compose-inp {
     margin: 2%;
     border-radius: 0;
@@ -28,4 +32,8 @@ body {
 .mails {
     margin: 1em;
     color: black
+}
+
+.public-address {
+    margin-top: 1em;
 }

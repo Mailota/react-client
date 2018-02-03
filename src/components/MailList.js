@@ -47,7 +47,7 @@ export class MailList extends Component {
                 console.log(mail)
                 return (
                     <div key={i} className="mails">
-                        <div className="list-group-item" >{mail.subject} hi every body!</div>
+                        <div className="list-group-item" >{mail.subject}</div>
                         <div className="list-group-item" >{mail.message}</div>
                     </div>
                 )
