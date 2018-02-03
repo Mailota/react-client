@@ -1,0 +1,12 @@
+body {
+    background: black;
+    color: #f0f0f0;
+}
+
+.login-box {
+    margin-top: 100px;
+}
+
+.seed-box {
+    word-break: break-all;
+}
