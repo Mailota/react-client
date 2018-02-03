@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { LoginPage } from './pages/LoginPage'
+import { MailPage } from './pages/MailPage'
 class App extends Component {
   state = {
     mailSeed: ''
@@ -24,7 +25,7 @@ class App extends Component {
   renderAppropriatePage() {
     if(this.state.mailSeed) {
       return (
-        <div>I'm here</div>
+        <MailPage seed={this.state.mailSeed} />
       )
     } else {
       return (

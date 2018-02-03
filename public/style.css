@@ -10,3 +10,12 @@ body {
 .seed-box {
     word-break: break-all;
 }
+
+.compose-inp {
+    margin: 2%;
+    border-radius: 0;
+}
+
+.compose-box {
+    margin-top: 10em;
+}
